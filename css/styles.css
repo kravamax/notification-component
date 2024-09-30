@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  background-color: #f4edff;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+main {
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+.background-block {
+  width: 713px;
+  height: 175px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #cd8aff;
+  border-radius: 30px;
+
+  position: relative;
+}
+
+.notification-block {
+  width: 550px;
+  /* height: 297px; */
+  padding: 72px 32px 46px 72px;
+
+  background-color: #ffffff;
+  border-radius: 24px;
+
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.button-close {
+  display: block;
+  width: 64px;
+  height: 64px;
+
+  background-color: #f8f4ff;
+  border-radius: 50%;
+  border: 1px solid #f4edff;
+  margin-left: auto;
+
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.button-close::before {
+  content: '';
+  width: 26px;
+  height: 3px;
+  background-color: #8660c4;
+  border-radius: 3px;
+  transform: rotate(45deg);
+
+  position: absolute;
+  left: calc(50% - 13px);
+}
+
+.button-close::after {
+  content: '';
+  width: 26px;
+  height: 3px;
+  background-color: #8660c4;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+
+  position: absolute;
+  left: calc(50% - 13px);
+}
+
+.notification-tittle {
+  color: #38196b;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.notification-link__container {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.notification-link__img {
+  width: 58px;
+  height: 58px;
+  border-radius: 17px;
+  background-image: linear-gradient(to bottom right, #9ab0ff, #eb73ff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notification-link__text {
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.notification-button__container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.notification-button {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 11px 24px;
+
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.button__block {
+  color: #ff1212;
+  border: 1px solid #ffb2b2;
+}
+.button__allow {
+  color: #0abe31;
+  border: 1px solid #9eebaf;
+}
